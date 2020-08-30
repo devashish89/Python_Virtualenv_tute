@@ -1,0 +1,84 @@
+C:\Users\91836\Desktop\python_venv_tute>pip install virtualenv
+Collecting virtualenv
+  Downloading virtualenv-20.0.31-py2.py3-none-any.whl (4.9 MB)
+     |████████████████████████████████| 4.9 MB 3.3 MB/s
+Requirement already satisfied: filelock<4,>=3.0.0 in c:\users\91836\anaconda3\lib\site-packages (from virtualenv) (3.0.12)
+Requirement already satisfied: six<2,>=1.9.0 in c:\users\91836\anaconda3\lib\site-packages (from virtualenv) (1.15.0)
+Collecting appdirs<2,>=1.4.3
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting distlib<1,>=0.3.1
+  Downloading distlib-0.3.1-py2.py3-none-any.whl (335 kB)
+     |████████████████████████████████| 335 kB 6.8 MB/s
+Installing collected packages: appdirs, distlib, virtualenv
+Successfully installed appdirs-1.4.4 distlib-0.3.1 virtualenv-20.0.31
+
+C:\Users\91836\Desktop\python_venv_tute>virtualenv harry
+created virtual environment CPython3.8.3.final.0-64 in 1474ms
+  creator CPython3Windows(dest=C:\Users\91836\Desktop\python_venv_tute\harry, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\91836\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.2, setuptools==49.6.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+C:\Users\91836\Desktop\python_venv_tute>cd harry/Scripts/
+
+C:\Users\91836\Desktop\python_venv_tute\harry\Scripts>activate
+
+(harry) C:\Users\91836\Desktop\python_venv_tute\harry\Scripts>pip list
+Package    Version
+---------- -------
+pip        20.2.2
+setuptools 49.6.0
+wheel      0.35.1
+
+(harry) C:\Users\91836\Desktop\python_venv_tute\harry\Scripts>pip install numpy
+Collecting numpy
+  Downloading numpy-1.19.1-cp38-cp38-win_amd64.whl (13.0 MB)
+     |████████████████████████████████| 13.0 MB 3.2 MB/s
+Installing collected packages: numpy
+Successfully installed numpy-1.19.1
+
+(harry) C:\Users\91836\Desktop\python_venv_tute\harry\Scripts>pip list
+Package    Version
+---------- -------
+numpy      1.19.1
+pip        20.2.2
+setuptools 49.6.0
+wheel      0.35.1
+
+(harry) C:\Users\91836\Desktop\python_venv_tute\harry\Scripts>cd ../..
+
+(harry) C:\Users\91836\Desktop\python_venv_tute>pip freeze > requirements.txt
+
+(harry) C:\Users\91836\Desktop\python_venv_tute>cd harry/Scripts
+
+(harry) C:\Users\91836\Desktop\python_venv_tute\harry\Scripts>deactivate.bat
+
+C:\Users\91836\Desktop\python_venv_tute>del harry
+C:\Users\91836\Desktop\python_venv_tute\harry\*, Are you sure (Y/N)? Y
+
+C:\Users\91836\Desktop\python_venv_tute>virtualenv deva
+created virtual environment CPython3.8.3.final.0-64 in 534ms
+  creator CPython3Windows(dest=C:\Users\91836\Desktop\python_venv_tute\deva, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\91836\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.2, setuptools==49.6.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+C:\Users\91836\Desktop\python_venv_tute>cd deva/Scripts/
+
+C:\Users\91836\Desktop\python_venv_tute\deva\Scripts>activate
+
+(deva) C:\Users\91836\Desktop\python_venv_tute\deva\Scripts>cd ../..
+
+(deva) C:\Users\91836\Desktop\python_venv_tute>pip install -r requirements.txt
+Collecting numpy==1.19.1
+  Using cached numpy-1.19.1-cp38-cp38-win_amd64.whl (13.0 MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.19.1
+
+(deva) C:\Users\91836\Desktop\python_venv_tute>pip list
+Package    Version
+---------- -------
+numpy      1.19.1
+pip        20.2.2
+setuptools 49.6.0
+wheel      0.35.1
